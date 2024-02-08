@@ -15,7 +15,7 @@ async function checkPrice(){
                                             .evaluate(() => document.querySelector("span.a-price-whole").innerText)
                                             .end();
         const priceNumber = parseInt(priceString.replace(".", ""));
-        console.log(priceNumber);
+        
         if(priceString < minPrice )
             console.log("It is Cheap");
         else
